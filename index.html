@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="titulo">
+      <h2>Trabalho prático 01 - Bootcamp IGTI</h2>
+    </header>
+    <div id="inputs">
+      <label class="red">
+        <strong>( R ) Vermelho:</strong>
+        <br />
+        <input
+          type="range"
+          id="red"
+          value="0"
+          min="0"
+          max="255"
+          oninput="redNum.value = value"
+          ;
+          onchange="redNum.value = value"
+          ;
+        />
+        <input type="text" id="redNum" value="0" disabled />
+      </label>
+      <br />
+      <label class="green">
+        <strong>( G ) Verde:</strong>
+        <br />
+        <input
+          type="range"
+          id="green"
+          value="0"
+          min="0"
+          max="255"
+          oninput="greenNum.value = value"
+          ;
+          onchange="greenNum.value = value"
+          ;
+        />
+        <input type="text" id="greenNum" value="0" disabled />
+      </label>
+      <br />
+      <label class="blue">
+        <strong>( B ) Azul:</strong>
+        <br />
+        <input
+          type="range"
+          id="blue"
+          value="0"
+          min="0"
+          max="255"
+          oninput="blueNum.value = value"
+          ;
+          onchange="blueNum.value = value"
+          ;
+        />
+        <input type="text" id="blueNum" value="0" disabled />
+      </label>
+      <div id="color"></div>
+    </div>
+    <footer>
+      <h6>Created by Thiago Wolf Nóbrega</h4>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
